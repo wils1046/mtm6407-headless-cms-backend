@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movie_reviews",
+  "info": {
+    "singularName": "movie-review",
+    "pluralName": "movie-reviews",
+    "displayName": "Movie Review"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "movieTitle": {
+      "type": "string",
+      "required": true
+    },
+    "rating": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 5
+    },
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "genre": {
+      "type": "string",
+      "required": true
+    },
+    "reviewer": {
+      "type": "string",
+      "required": true
+    },
+    "reviewDate": {
+      "type": "date",
+      "required": true
+    },
+    "subImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "review": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
